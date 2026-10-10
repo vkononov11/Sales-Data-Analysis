@@ -21,3 +21,9 @@ CREATE TABLE IF NOT EXISTS sales (
     discount REAL,
     profit REAL
 );
+
+CREATE TABLE customers (
+    customer_id TEXT PRIMARY KEY,
+    customer_name TEXT,
+    segment TEXT
+);

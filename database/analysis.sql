@@ -1,3 +1,5 @@
-SELECT * 
+SELECT sales.order_id, sales.product_name, customers.customer_name, customers.segment
 FROM sales
-LIMIT 5;
+LEFT JOIN customers
+ON sales.customer_id = customers.customer_id
+LIMIT 10;
